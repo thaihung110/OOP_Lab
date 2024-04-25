@@ -8,8 +8,9 @@ public class Book extends Media{
 	
 	private List<String> authors = new ArrayList<String>();
 	
-	public Book() {
-		// TODO Auto-generated constructor stub
+	public Book(int id, String title, String category, float cost, List<String> authors) {
+		super(id, title, category, cost);
+		this.authors = authors;
 	}
 
 	public List<String> getAuthors() {
@@ -42,11 +43,8 @@ public class Book extends Media{
 
 	@Override
 	public String toString() {
-		return "Book [authors=" + authors + ", getId()=" + getId() + ", getTitle()="
-				+ getTitle() + ", getCategory()=" + getCategory() + ", getCost()=" + getCost() + "]";
+		return "Book: " + super.toString() + " - " + getAuthors();
 	}
-	
-	
 	
 
 }

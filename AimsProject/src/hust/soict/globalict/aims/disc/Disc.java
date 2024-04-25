@@ -37,6 +37,26 @@ public class Disc extends Media{
 		this.length = length;
 		this.director = director;
 	}
+
+	public Disc(int id, String title, String category, String director, float cost) {
+		super(id, title, category, cost);
+		this.director = director;
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public Disc(int id, String title, String category, String director, int length, float cost) {
+		super(id, title, category, cost);
+		this.director = director;
+		this.length = length;
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() + " - " + getLength() + " - " + getDirector();
+	}
+	
 	
 	
 

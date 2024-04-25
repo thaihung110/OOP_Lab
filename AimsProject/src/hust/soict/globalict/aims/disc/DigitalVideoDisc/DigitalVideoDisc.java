@@ -21,6 +21,10 @@ public class DigitalVideoDisc extends Disc implements Playable{
 		super(title, category, director, length, cost);
 	}
 	
+	public DigitalVideoDisc(int id, String title, String category, String director, int length, float cost) {
+		super(id, title, category, director, length, cost);
+	}
+	
 	public boolean equals(DigitalVideoDisc obj) {
 		return this.getTitle() == obj.getTitle() && this.getCategory() == obj.getCategory()
 		&& this.getDirector() == obj.getDirector() && this.getLength() == obj.getLength()
@@ -29,8 +33,7 @@ public class DigitalVideoDisc extends Disc implements Playable{
 	
 	@Override
 	public String toString() {
-		return "DVD - " + this.getTitle() + " - " + this.getCategory() + " - " + this.getDirector() + " - "
-				+ this.getLength() + ": " + this.getCost() + " $";
+		return "DVD: " + super.toString();
 	}
 	
 	public void play() {

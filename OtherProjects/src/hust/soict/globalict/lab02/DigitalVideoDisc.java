@@ -1,3 +1,4 @@
+package hust.soict.globalict.lab02;
 import java.util.Objects;
 
 public class DigitalVideoDisc {

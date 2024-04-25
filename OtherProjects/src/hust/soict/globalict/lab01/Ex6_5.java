@@ -1,3 +1,4 @@
+package hust.soict.globalict.lab01;
 import java.util.Scanner;
 import java.util.Arrays;
 public class Ex6_5 {

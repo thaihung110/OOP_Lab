@@ -1,3 +1,4 @@
+package hust.soict.globalict.lab02;
 
 public class Aims {
 

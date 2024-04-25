@@ -1,3 +1,4 @@
+package hust.soict.globalict.lab01;
 import java.util.Scanner;
 public class Equation_ {
 	static void linear_equation() {

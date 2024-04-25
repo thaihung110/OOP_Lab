@@ -83,6 +83,12 @@ public abstract class Media {
 		return Objects.equals(title, other.title);
 	}
 	
+	@Override
+	
+	public String toString() {
+		return getId() + " - " + getTitle() + " - " + getCategory() + " - " + getCost();
+	}
+	
 	public static void mediaDetailsMenu() {
 		System.out.println("Media Options: ");
 		System.out.println("--------------------------------");
