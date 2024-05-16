@@ -13,7 +13,7 @@ public class CompactDisc extends Disc implements Playable{
 	}
 	
 	private String artist;
-	private List<Track> tracks = new ArrayList<Track>();
+	public List<Track> tracks = new ArrayList<Track>();
 	
 	
 	public List<String> getTrackName() {
