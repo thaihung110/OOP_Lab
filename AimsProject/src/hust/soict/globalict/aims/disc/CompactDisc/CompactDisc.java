@@ -14,8 +14,8 @@ public class CompactDisc extends Disc implements Playable{
 	
 	private String artist;
 	public List<Track> tracks = new ArrayList<Track>();
-	
-	
+
+
 	public List<String> getTrackName() {
 		List<String> lst = new ArrayList<String>();
 		for (int i = 0; i < tracks.size(); i++) {

@@ -5,6 +5,7 @@ import java.util.Collections;
 import hust.soict.globalict.aims.store.Media;
 
 public class Cart {
+
 	private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
 	
 	public ArrayList<Media> getItemsOrdered() {
@@ -23,6 +24,12 @@ public class Cart {
 		else {
 			System.out.println("Media is already in the cart.");
 		}
+	}
+
+	// Thêm phương thức để xóa sạch giỏ hàng
+	public void emptyCart() {
+		itemsOrdered.clear();
+		System.out.println("All items have been removed from the cart.");
 	}
 	
 	public void removeMedia(Media media) {
